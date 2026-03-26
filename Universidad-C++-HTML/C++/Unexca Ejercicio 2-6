@@ -1,0 +1,25 @@
+/*Que lea 10 números por teclado, 5 para un array y 5 para otro array distinto. Hallar la suma algebraica los dos vectores,
+el promedio del primer array, el promedio del segundo array, promedio de los dos array en conjunto.*/
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main(){
+    int array1[5];{}
+    int array2[5];{}
+    int suma_algebraica, promedio1, promedio2, promedio_mixto;
+
+    cout<<"Digite 5 numeros para el primer array:  "<<endl; cin>>array1[5];
+    cout<<"Digite 5 numeros para el segundo array:  "<<endl; cin>>array2[5];
+
+    cout<<"Los numeros para los array son los siguientes "<<endl; 
+    cout<<"Array 1: "<<" "<<array1<<endl;
+    cout<<"Array 2: "<<" "<<array2<<endl;
+
+
+
+
+    getch();
+    return 0;
+}

@@ -1,0 +1,171 @@
+*{/*Margen de toda la Web*/
+    margin: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+a{/*Quitar Decoracion de los textos anclados */
+    
+    text-decoration: none;
+}
+.padre{/*Configuracion de los cuadros */
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+    .header{/*Primer cuadro */
+        background: url(ImagenesCSS/inform_fond.jpg); /*Fondo del Primer Cuadro, donde estan los logos */
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: rgb(0,0,0,.1);
+            display: flex;
+            flex-flow: row nowrap;
+            height: 100px;
+            align-items: center;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+        }
+            .logo{
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    color: white;
+                    font-display: 10px;
+                }
+                .logo a:hover{
+                    color: gray;
+                }
+            .nav{
+                flex: 5 1 auto;
+            }
+                .nav a{
+                    color: white;
+                    font-size: 14px;
+                    text-transform: uppercase;
+                    padding: 0 5px;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover{
+                    color: gray;
+                }
+            .social{
+                flex: 1 1 auto;
+                display: flex;
+            }
+            .social a:hover{
+                color: gray;
+            }
+            .texto-principal{
+                height: 80px;
+                align-items: center;
+                
+            }
+                h1{
+                    font-family: 'Times New Roman', Times, serif;
+                    font-size:30px;
+                    color: #fff;
+                    font-weight: 300;
+                    text-align: center;
+                    line-height: 1.6;
+                }
+        .articulos{
+            /*background: url(ImagenesCSS/inform_fond.jpg);*/
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                flex:1 1 12%;
+                color:#ffffff;
+                font-size: 18px;
+                letter-spacing: 1px;
+                margin: 10px 10px 0 0px;
+                flex: 1 1 45%;
+                background: url(ImagenesCSS/inform_fond.jpg) /*Fondo del segundo cuadro, donde se encuetra todo el concepto */
+            }
+            p{
+                text-align: justify;
+            }
+
+            h3{
+                color: #ffffff;
+                font-size: 15px;
+                padding: 10px 0;
+                margin-top: -80;
+            }
+            
+            h2{
+                font-size: 20px;
+                text-transform: uppercase;
+                padding: 0px 0 10px 0;
+                color: #fff;
+            }
+            ul{
+                text-align: justify;
+            }
+            h4{
+            color: #ffff;
+            font-size: 14px;
+            text-transform: uppercase;
+            padding: 10px 0;
+            overflow: hidden;
+            }
+
+    .footer{
+        background: rgb(0,0,0,.7);
+        display: flex;
+        justify-content: center;
+    }
+        .pie{
+            display: flex;
+            width: 2500px;
+        }
+        .estudiantes{
+            background: rgb(0,0,0,.3);
+            color: white;
+            flex: auto;
+        }
+        .instituto{
+            background: rgb(0,0,0,.3);
+            color: white;
+            flex: auto;
+        }
+        .profesor{
+            background: rgb(0,0,0,.3);
+            color: white;
+            flex: auto;
+        }
+
+@media all and (max-width: 800px){
+        .section{
+            flex-direction: column;
+        }
+        .menu{
+            flex-direction: column;
+            height: auto;
+
+        }
+        .aside{
+            display: flex;
+            justify-content: center;
+        }
+        .aside img{
+            width: 100%;
+        }
+    }
+@media all and (max-width: 600px){
+    .articulos{
+        flex-direction: column;
+        }
+    }
+    @media all and (max-width: 400px){
+        .aside{
+            flex-direction: column;
+        }
+    }
+
+/*Asi se escriben los comentarios*/

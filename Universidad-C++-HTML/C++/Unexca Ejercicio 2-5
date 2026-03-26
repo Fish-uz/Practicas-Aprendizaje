@@ -1,0 +1,30 @@
+//Que lea 10 números por teclado, los almacene en un array y muestre la suma, resta, 
+//multiplicación y división de todos. 
+
+#include<iostream>
+#include<conio.h>
+using namespace std; 
+
+int main(){
+    int numero[10];
+    int suma = 0;
+    int resta = 0;
+    int multiplicacion = 0;
+    int division = 0;
+
+    for(int i=0; i<=9; i++){
+        cout<<"Coloque el numero para el array "<<i + 1<<" : "; cin>>numero[i];
+        suma += numero[i];
+        resta -= numero[i];
+        multiplicacion *= numero[i];
+        division /= numero[i];
+
+    }
+        cout<<"\nLa Suma de los elementos es : "<<suma<<endl;
+        cout<<"La Resta de los elementos es : "<<resta<<endl;
+        cout<<"La Multiplicacion de los elementos es : "<<multiplicacion<<endl;
+        cout<<"La Division de los elementos es : "<<division<<endl;
+
+    getch();
+    return 0;
+}

@@ -1,0 +1,32 @@
+//Que rellene un array con 10 números aleatorios y los muestre en pantalla en orden ascendente
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main(){
+    int numero[]= {1,4,5,2,7,3,9,6,8,10};
+    int i,f,aux;
+
+    for(i=0; i<=10; i++){
+        for(f=0;f<10;f++){
+            if(numero[f]>numero[f+1]){
+            aux=numero[f];
+            numero[f]=numero[f+1];
+            numero[f+1]= aux;  
+            }
+        }
+
+    }
+
+    cout<<"Orden Ascendente: "<<endl;
+
+    for(i=0;i<10;i++){
+        cout<<numero[i]<<endl;
+
+    }
+
+    getch();
+    return 0;
+}

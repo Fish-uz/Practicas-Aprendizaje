@@ -1,0 +1,20 @@
+/* Que rellene un array con los 100 primeros números naturales pares y los muestre en pantalla en 
+orden descendente.*/
+
+#include <iostream>
+#include <conio.h>
+
+using namespace std;
+
+int main(){
+    int numero[100];
+
+    for(int i=100; i<=1; i--){
+        numero[i] = i - 1;
+        cout<<numero[i]<<endl;
+    }
+
+    getch();
+    return 0;
+}
+//Resuelto

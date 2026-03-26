@@ -1,0 +1,33 @@
+/*1.13 Suponiendo que no existe la operación de multiplicación, hallas el producto de dos 
+números naturales utilizando sumas sucesivas.*/
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int operacion, n1,n2;
+
+    cout<<"Coloque un numero natural para realizar suma sucesivas: ";cin>>n1;
+    cout<<"¿Cuantas veces desea sumar el numero anterior?: ";cin>>n2;
+    cout<<"\n";
+    cout<<"El producto entre "<<n1<<" y "<<n2<<" es: "<<endl;
+    cout<<n1<<" x "<<n2<<": "<<endl;
+    
+   for(int i=1; i<=n2; i++){
+
+        operacion += n1;
+        
+        
+        cout<<operacion;
+        
+        if(i !=n2){ 
+        cout<<" + ";
+        }
+        
+   }
+   
+    cout<<"\n\nResultado o Producto es: "<<operacion;
+    
+    return 0;
+}
+//Resuelto
